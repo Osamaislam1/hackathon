@@ -203,10 +203,14 @@ const HeroSection = () => (
         animate={{ scale: [1, 1.05, 1] }}
         transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
       >
-        Hackathon $1M+ Prizes
+        The World's Largest Hackathon
       </motion.h2>
       <p className="text-lg md:text-xl text-gray-300 mb-10 max-w-xl mx-auto">
-        Join the most creative coding challenge where innovation meets opportunity.
+        Join thousands of developers worldwide in this groundbreaking
+        event where innovation meets opportunity. Build the next big 
+        thing and compete for life-changing prizes. This virtual hackathon
+        will take place on a date to be determined, with over $1 million
+        in prizes across multiple categories.
       </p>
       <div className="flex flex-col sm:flex-row gap-4 justify-center">
         <motion.a 
