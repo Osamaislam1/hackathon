@@ -248,12 +248,12 @@ const JudgesSlider = () => {
   }, []);
 
   const judges = [
-    { name: "levelsio", twitter: "@levelsio", image: "/public/images/levelsio.jpg" },
-    { name: "Logan Kilpatrick", twitter: "@OfficialLoganK", image: "/public/images/loganK.jpg" },
-    { name: "sarah guo // conviction", twitter: "@saranormous", image: "/public/images/saranormous.jpg" },
-    { name: "Theo - t3.gg", twitter: "@theo", image: "/public/images/theo.jpg" },
-    { name: "Evan You", twitter: "@youyuxi", image: "/public/images/youyuxi.jpg" },
-    { name: "KP", twitter: "@thisiskp_", image: "/public/images/thisiskp_.jpg" },
+    { name: "levelsio", twitter: "@levelsio", image: "/public/assets/images/levelsio.jpg" },
+    { name: "Logan Kilpatrick", twitter: "@OfficialLoganK", image: "/public/assets/images/loganK.jpg" },
+    { name: "sarah guo // conviction", twitter: "@saranormous", image: "/public/assets/images/saranormous.jpg" },
+    { name: "Theo - t3.gg", twitter: "@theo", image: "/public/assets/images/theo.jpg" },
+    { name: "Evan You", twitter: "@youyuxi", image: "/public/assets/images/youyuxi.jpg" },
+    { name: "KP", twitter: "@thisiskp_", image: "/public/assets/images/thisiskp_.jpg" },
   ];
 
   return (
@@ -294,12 +294,12 @@ const SponsorsSlider = () => {
   }, []);
 
   const sponsors = [
-    { id: 1, name: "Supabase", logo: "/public/images/supabase.jpg" },
-    { id: 2, name: "Netlify", logo: "/public/images/Netlify.png" },
-    { id: 3, name: "CloudflareDev", logo: "/public/images/CloudflareDev.jpg" },
-    { id: 4, name: "Sentry", logo: "/public/images/getsentry.png" },
-    { id: 5, name: "Loops", logo: "/public/images/loops.jpg" },
-    { id: 6, name: "AlgoFoundation", logo: "/public/images/AlgoFoundation.jpg" },
+    { id: 1, name: "Supabase", logo: "/public/assets/images/supabase.jpg" },
+    { id: 2, name: "Netlify", logo: "/public/assets/images/Netlify.png" },
+    { id: 3, name: "CloudflareDev", logo: "/public/assets/images/CloudflareDev.jpg" },
+    { id: 4, name: "Sentry", logo: "/public/assets/images/getsentry.png" },
+    { id: 5, name: "Loops", logo: "/public/assets/images/loops.jpg" },
+    { id: 6, name: "AlgoFoundation", logo: "/public/assets/images/AlgoFoundation.jpg" },
   ];
 
   return (
