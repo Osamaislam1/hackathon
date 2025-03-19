@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --neon-cyan: #00ffff;
+    --neon-purple: #b026ff;
+    --neon-green: #39ff14;
+  }
+
+  body {
+    @apply bg-gray-950 text-gray-100;
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+@layer components {
+  .neon-text {
+    text-shadow: 0 0 10px var(--neon-cyan),
+                 0 0 20px var(--neon-cyan),
+                 0 0 30px var(--neon-cyan);
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-purple-500 to-green-400;
+  }
+
+  .card {
+    @apply bg-gray-900/50 backdrop-blur-sm rounded-xl p-6 border border-gray-800 
+           hover:border-cyan-500/50 transition-all duration-300 relative 
+           hover:shadow-[0_0_30px_rgba(0,255,255,0.1)] hover:-translate-y-1;
+  }
+
+  .button-primary {
+    @apply px-8 py-3 bg-gradient-to-r from-cyan-500 to-purple-600 rounded-full font-semibold 
+           hover:from-cyan-400 hover:to-purple-500 transition-all duration-300 shadow-lg 
+           hover:shadow-cyan-500/25 text-white relative overflow-hidden
+           after:absolute after:inset-0 after:bg-gradient-to-r 
+           after:from-transparent after:via-white/20 after:to-transparent
+           after:translate-x-[-200%] hover:after:translate-x-[200%]
+           after:transition-transform after:duration-700;
+  }
+
+  .glow-card {
+    @apply relative;
+  }
+
+  .glow-card::before {
+    content: '';
+    @apply absolute inset-0 bg-gradient-to-r from-cyan-500/20 to-purple-500/20 
+           rounded-xl blur-xl opacity-0 transition-opacity duration-300;
+  }
+
+  .glow-card:hover::before {
+    @apply opacity-100;
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}
+
+.bg-grid {
+  background-image: linear-gradient(to right, #1f2937 1px, transparent 1px),
+                    linear-gradient(to bottom, #1f2937 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+.bg-radial-fade {
+  background: radial-gradient(circle at center, transparent 0%, #000 70%);
+}
